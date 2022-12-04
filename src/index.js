@@ -27,6 +27,11 @@ app.use(
     origin: "*",
   })
 );
+router.use(
+  cors({
+    origin: "*",
+  })
+);
 
 router.post("/signup", async (req, res) => {
     const {email, password } = req.body;
